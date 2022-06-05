@@ -78,10 +78,19 @@ a {
   clip: rect(0 0 0 0);
 }
 
+
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-fluid-width);
+  display: block;
+
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -102,6 +111,200 @@ a {
   overscroll-behavior: none;
 }
 
+.btn {
+  position: absolute;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  margin-left: 300px;
+  margin-top: -400px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  color: var(--light-color);
+  font-size: medium;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border: 0.4px;
+  
+}
+
+.modals {
+    display: none;
+}
+
+.modaloverlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom:0;
+  background-color: rgba(0,0,0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.modulesecond {
+  display: none;
+}
+.modulethird {
+  display: none;
+}
+
+.modulefour {
+  display: none;
+}
+
+.modulefive {
+  display: none;
+}
+
+.modulesix {
+  display: none;
+}
+
+.moduleseven {
+  display: none;
+}
+
+.moduleeight {
+  display: none;
+}
+
+.modulenine {
+  display: none;
+}
+
+.moduleten {
+  display: none;
+}
+
+.moduleeleven {
+  display: none;
+}
+
+.modulemax {
+  display: none;
+}
+
+.modulemiddle {
+  display: none;
+}
+
+.modulemin {
+  display: none;
+}
+
+@media (max-width: 1394px) {
+  .modulesecond {display: flex;
+    position: relative;
+    
+  }
+  .container-fluid {display: none;}
+  
+}
+
+@media (max-width: 1234px) {
+
+  .modulethird {display: flex;}
+  .modulesecond {display: none;}
+}
+
+@media (max-width: 1002px) {
+
+  .modulefour {display: flex;}
+  .modulethird {display: none;}
+}
+
+@media (max-width: 784px) {
+
+  .modulefive {display: flex;}
+  .modulefour {display: none;}
+}
+
+@media (max-width: 767px) {
+
+  .modulesix {display: flex;
+    position: absolute;
+    width: 767px;
+    height: 767px;}
+  .modulefive {display: none;}
+}
+
+@media (max-width: 720px) {
+
+  .moduleseven {display: flex;
+    position: absolute;
+    width: 720px;
+    height: 405px;}
+  .modulesix {display: none;}
+}
+
+@media (max-width: 694px) {
+
+  .moduleeight {display: flex;
+    position: absolute;
+    width: 694px;
+    height: 521px;}
+  .moduleseven {display: none;}
+}
+
+@media (max-width: 630px) {
+
+  .modulenine {display: flex;
+    position: absolute;
+    width: 630px;
+    height: 630px;}
+  .moduleeight {display: none;}
+}
+
+@media (max-width: 596px) {
+
+  .moduleten {display: flex;
+    position: absolute;
+    width: 596px;
+    height: 335px;}
+  .modulenine {display: none;}
+}
+
+@media (max-width: 538px) {
+
+  .moduleeleven {display: flex;
+    position: absolute;
+    width: 538px;
+    height: 404px;}
+  .moduleten {display: none;}
+}
+
+@media (max-width: 480px) {
+
+  .modulemax {display: flex;
+    position: absolute;
+    width: 480px;
+    height: 319px;}
+  .moduleeleven {display: none;}
+}
+
+@media (max-width: 450px) {
+
+  .modulemiddle {display: flex;
+    position: absolute;
+    width: 450px;
+    height: 450px;}
+  .modulemax {display: none;}
+}
+
+@media (max-width: 200px) {
+
+  .modulemin {display: flex;
+    position: absolute;
+    width: 200px;
+    height: 200px;}
+  .modulemiddle {display: none;}
 }
