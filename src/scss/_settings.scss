@@ -127,9 +127,10 @@ a {
   
 }
 
-.modals {
-    display: none;
+.btn:hover {
+  color: blueviolet;
 }
+
 
 .modaloverlay {
   position: fixed;
@@ -143,8 +144,26 @@ a {
   justify-content: center;
   height: 100vh;
   width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
 }
 
+.modaloverlay.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: all 0.3s ease-in-out;
+}
+
+.mainmodal {
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
 
 .page--ios .dis-scroll {
   position: relative;
